@@ -15,15 +15,15 @@ function Skills() {
      </div>
      <div className="col-12 col-md-6">
       <div className="icons">
-      <AiFillHtml5 />
       <DiCss3 />
-      <SiJavascript />
       <DiReact />
-
+      <SiJavascript />
+      <DiGit />
       <DiSass />
       <DiBootstrap />
+
       <SiRedux />
-      <DiGit />
+      <AiFillHtml5 />
       Gsap, SEO
       </div>
      </div>
