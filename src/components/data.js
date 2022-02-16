@@ -1,5 +1,5 @@
 //missing logos:
-// postman,node,express,mern,mongodb,mongoose, redux, typescript
+// postman,node,express,mern,mongodb,mongoose, redux, typescript, postman
 const logos = [
   {
     order: 1,
