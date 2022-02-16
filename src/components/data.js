@@ -1,3 +1,5 @@
+//missing logos:
+// postman,node,express,mern,mongodb,mongoose, redux, typescript
 const logos = [
   {
     order: 1,
@@ -61,7 +63,7 @@ const logos = [
     title: 'd3',
     text: 'd3',
     logoImg: '../img/svg/d3.svg',
-    doKnowIt: true,
+    doKnowIt: false,
   },
   {
     order: 10,
@@ -90,6 +92,13 @@ const logos = [
     text: 'mysql',
     logoImg: '../img/svg/mysql.svg',
     doKnowIt: false,
+  },
+  {
+    order: 14,
+    title: 'seo',
+    text: 'search engine optimization',
+    logoImg: '../img/svg/seo.svg',
+    doKnowIt: true,
   },
 ];
 
