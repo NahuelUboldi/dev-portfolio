@@ -1,5 +1,5 @@
 import React from 'react';
-import logos from './data';
+import logos from '../data/logosData';
 import Logo from './micro/Logo';
 
 function Skills() {
@@ -13,7 +13,7 @@ function Skills() {
           <div className='col-12'>
             <div className='icons'>
               {skillsThatIKnow.map((item) => (
-                <Logo img={item.logoImg} text={item.text} />
+                <Logo key={item.title} img={item.logoImg} text={item.text} />
               ))}
             </div>
           </div>

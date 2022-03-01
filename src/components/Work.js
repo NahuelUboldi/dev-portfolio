@@ -1,4 +1,6 @@
 import React from 'react';
+import Proyect from './Proyect';
+import proyects from '../data/proyectsData';
 
 const Work = () => {
   return (
@@ -9,7 +11,17 @@ const Work = () => {
           This are some of my featured proyects
         </span>
         <div className='row'>
-          <div className='col-12'></div>
+          <div className='col-12 text-center'>
+            {proyects.map((proy) => {
+              const { id, title, img, text, links, tags } = proy;
+              return (
+                <Proyect
+                  key={id}
+                  data={{ id, title, img, text, links, tags }}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

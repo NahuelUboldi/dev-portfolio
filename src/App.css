@@ -9,6 +9,11 @@
 :root {
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #555;
+  --color-gray-dark: #333;
+  --color-gray-light: #ddd;
 }
 body {
   font-family: var(--font-serif);
@@ -51,4 +56,60 @@ nav {
 }
 .icons {
   font-size: 1.5rem;
+}
+
+/* //PROYECTS */
+.proyect-img {
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem;
+  filter: grayscale(100%);
+  border: double 0.3rem #777;
+  border-radius: 1rem;
+  transition: filter ease 1s;
+}
+.proyect-img:hover {
+  filter: grayscale(0);
+}
+.proyect-text {
+  font-size: 1.2rem;
+}
+.proyect-tags,
+.proyect-links {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.proyect-tags li {
+  color: var(--color-white);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  background-color: var(--color-gray-dark);
+}
+.proyect-links li {
+  padding: 0px;
+  padding: 0.3rem 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: solid 1px var(--color-black);
+  transition: all ease 1s;
+}
+
+.proyect-links li a {
+  padding: 0px;
+  color: var(--color-black);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 1s;
+}
+
+.proyect-links li:hover a {
+  color: var(--color-white);
+}
+.proyect-links li:hover {
+  background-color: var(--color-black);
 }
