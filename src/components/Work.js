@@ -1,0 +1,19 @@
+import React from 'react';
+
+const Work = () => {
+  return (
+    <section id='work'>
+      <div className='container d-flex flex-column align-items-center'>
+        <span className='display-3'>Work</span>
+        <span className='h3 font-serif mb-5'>
+          This are some of my featured proyects
+        </span>
+        <div className='row'>
+          <div className='col-12'></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Work;
