@@ -1,40 +1,17 @@
 import React from 'react';
-import proyectImg from '../img/proyects/detras-del-armario.png';
-import { BsGithub, BsFilterCircleFill } from 'react-icons/bs';
+import { BsGithub, BsFilterCircleFill, BsYoutube } from 'react-icons/bs';
+import ProyectLink from './micro/ProyectLink';
 
 const Proyect = (props) => {
-  console.log('PROPS', props.data);
   const { id, title, img, text, links, tags } = props.data;
-  console.log('PROYECTO', id, title, img, text, links, tags);
+  console.log("link",links.youtube);
   return (
-    <>
+    <div className='proyect mb-5'>
       <img src={img} alt={title} className='proyect-img mt-5' />
       <ul className='proyect-links'>
-        <li>
-          <a
-            href={links.github}
-            target={'_blank'}
-            rel='nofollow noreferrer noopener'
-          >
-            <span className='fs-3 mx-2'>
-              <BsGithub />
-            </span>
-            <span className='mx-2'> Code Repo</span>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href={links.live}
-            target={'_blank'}
-            rel='nofollow noreferrer noopener'
-          >
-            <span className='fs-3 mx-2'>
-              <BsFilterCircleFill />
-            </span>
-            <span className='mx-2'>Live Site</span>
-          </a>
-        </li>
+        {links.github && <ProyectLink link={links.github} icon={<BsGithub />} text="Code Repo" />}
+        {links.live && <ProyectLink link={links.live} icon={<BsFilterCircleFill />} text="Live Site" />}
+        {links.youtube && <ProyectLink link={links.youtube} icon={<BsYoutube />} text="Video" />}
       </ul>
       <div className='h2 fw-bold font-sans'>{title}</div>
       <div className='proyect-text'>
@@ -48,7 +25,7 @@ const Proyect = (props) => {
           return <li>{tech}</li>;
         })}
       </ul>
-    </>
+    </div>
   );
 };
 
