@@ -38,7 +38,7 @@ h5,
 #header > .container,
 #about,
 #skills,
-#work {
+#work, #contact{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -112,4 +112,12 @@ nav {
 }
 .proyect-links li:hover {
   background-color: var(--color-black);
+}
+
+/* CONTACT FORM */
+@media (min-width: 800px) {
+  form {
+    width: 80%;
+  }
+
 }
