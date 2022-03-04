@@ -86,6 +86,7 @@ nav {
 .common-link {
   text-decoration: none;
   color: var(--color-gray);
+  vertical-align: top;
   transition: color linear 0.8s;
 }
 .common-link:hover {

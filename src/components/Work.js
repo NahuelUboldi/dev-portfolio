@@ -2,15 +2,17 @@ import React from 'react';
 import Proyect from './Proyect';
 import ProyectThumb from './ProyectThumb';
 import proyects from '../data/proyectsData';
+import SectionTitles from './micro/SectionTitles';
 
 const Work = ({ handleModal }) => {
   return (
     <section id='work'>
       <div className='container d-flex flex-column align-items-center'>
-        <span className='display-3'>Work</span>
-        <span className='subtitle h3 font-serif mb-5'>
-          Some of my featured proyects.
-        </span>
+        <SectionTitles
+          title={'Work'}
+          subtitle={'Some of my featured proyects.'}
+        />
+
         <div className='row'>
           <div className='col-12 text-center'>
             {proyects.map((proy) => {

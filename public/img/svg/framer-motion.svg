@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg647"
+   version="1.1"
+   viewBox="0 0 20.274525 29.897917"
+   height="29.897917mm"
+   width="20.274525mm">
+  <defs
+     id="defs641" />
+  <metadata
+     id="metadata644">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-117.61869,-71.140327)"
+     id="layer1">
+    <g
+       transform="matrix(0.46715495,0,0,0.46715495,112.80699,71.140327)"
+       id="g615">
+      <path
+         style="clip-rule:evenodd;fill:#67dbff;fill-rule:evenodd"
+         class="st0"
+         d="M 32,21.3 H 53.7 V 0 h -43 v 0.2 z"
+         id="path609" />
+      <path
+         style="clip-rule:evenodd;fill:#01a3ff;fill-rule:evenodd"
+         class="st1"
+         d="M 32,21.3 H 10.3 v 21.3 h 43 v -0.2 z"
+         id="path611" />
+      <path
+         style="clip-rule:evenodd;fill:#0162ff;fill-rule:evenodd"
+         class="st2"
+         d="M 10.3,42.5 H 31.8 V 64 Z"
+         id="path613" />
+    </g>
+  </g>
+</svg>

@@ -26,7 +26,7 @@ const Proyect = (props) => {
           <ProyectLink link={links.youtube} icon={<BsYoutube />} text='Video' />
         )}
       </ul>
-      <div className='h2 fw-bold font-sans'>{`${title} // ${type}`}</div>
+      <div className='h1 fw-bold font-sans'>{`${title} // ${type}`}</div>
       <div className='proyect-text'>
         {text.map((paragraph) => {
           return <p>{paragraph}</p>;

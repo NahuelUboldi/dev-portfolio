@@ -1,13 +1,12 @@
 import React from 'react';
 
+import SectionTitles from './micro/SectionTitles';
+
 function About() {
   return (
     <section id='about'>
       <div className='container d-flex flex-column align-items-center'>
-        <span className='display-3'>About</span>
-        <span className='subtitle h3 font-serif mb-5'>
-          A brief introduction.
-        </span>
+        <SectionTitles title={'About'} subtitle={'A brief introduction'} />
         <p className='text-center'>
           My name is Nahuel Uboldi and i`m a front end web developer and ui
           designer.
