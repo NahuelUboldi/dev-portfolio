@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {AnimatePresence} from "framer-motion"
 //data
 import proyects from './data/proyectsData';
 
@@ -23,9 +24,6 @@ function App() {
     setIsModalOpen(true);
     setCurrentProyect(number);
   };
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   const filteredProyect = proyects.filter((proy) => proy.id === currentProyect);
   const { id, title, type, img, text, links, tags } = filteredProyect[0];
@@ -38,11 +36,13 @@ function App() {
       <Work handleModal={handleModal} />
       <Contact />
       <Footer />
+      <AnimatePresence>
       {isModalOpen && (
-        <Modal currentProyect={currentProyect} closeModal={closeModal}>
-          <Proyect data={{ id, title, type, img, text, links, tags }} />
-        </Modal>
+          <Modal key="modal" setIsModalOpen={setIsModalOpen}>
+            <Proyect data={{ id, title, type, img, text, links, tags }} />
+          </Modal>
       )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 function Navbar() {
   return (
@@ -46,6 +47,17 @@ function Navbar() {
               </a>
             </li>
           </ul>
+           <a className='common-link mx-1'
+        href="https://github.com/NahuelUboldi"       
+        target={'_blank'}
+        rel='nofollow noreferrer noopener'> 
+         <BsGithub /> 
+        </a>
+        <a className='common-link mx-1' href="https://www.linkedin.com/in/nahuel-uboldi-15845ba6/"
+        target={'_blank'}
+        rel='nofollow noreferrer noopener'> 
+         <BsLinkedin /> 
+        </a>
         </div>
       </div>
     </nav>

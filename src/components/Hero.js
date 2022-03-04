@@ -9,9 +9,10 @@ function Hero() {
     >
       <span className='display-1 '>Nahuel Uboldi</span>
       <h1 className='h1 font-serif fw-4'>Front-end web developer</h1>
+
       <p className='lead text-center'>
-        Scroll down to see my work
-        <br />
+        Scroll down to see my work <br />
+
         <a className='common-link fs-1' href='#work'>
           <BsChevronCompactDown />
         </a>
