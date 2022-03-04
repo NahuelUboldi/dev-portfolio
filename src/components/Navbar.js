@@ -21,28 +21,28 @@ function Navbar() {
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='#about'>
-                About
+              <a className='nav-link' aria-current='page' href='#about'>
+                <span>About</span>
               </a>
             </li>
             <li className='nav-item'>
               <a className='nav-link' href='#skills'>
-                Skills
+                <span>Skills</span>
               </a>
             </li>
             <li className='nav-item'>
               <a className='nav-link' href='#work'>
-                Work
+                <span>Work</span>
               </a>
             </li>
             <li className='nav-item'>
               <a className='nav-link' href='#'>
-                Resume
+                <span>Resume</span>
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
-                Contact
+              <a className='nav-link' href='#contact'>
+                <span>Contact</span>
               </a>
             </li>
           </ul>

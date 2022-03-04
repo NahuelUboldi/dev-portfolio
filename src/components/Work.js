@@ -1,23 +1,28 @@
 import React from 'react';
 import Proyect from './Proyect';
+import ProyectThumb from './ProyectThumb';
 import proyects from '../data/proyectsData';
 
-const Work = () => {
+const Work = ({ handleModal }) => {
   return (
     <section id='work'>
       <div className='container d-flex flex-column align-items-center'>
         <span className='display-3'>Work</span>
-        <span className='h3 font-serif mb-5'>
+        <span className='subtitle h3 font-serif mb-5'>
           Some of my featured proyects.
         </span>
         <div className='row'>
           <div className='col-12 text-center'>
             {proyects.map((proy) => {
-              const { id, title, img, text, links, tags } = proy;
+              const { id, img, title, type } = proy;
               return (
-                <Proyect
+                <ProyectThumb
                   key={id}
-                  data={{ id, title, img, text, links, tags }}
+                  id={id}
+                  img={img}
+                  title={title}
+                  type={type}
+                  handleModal={handleModal}
                 />
               );
             })}

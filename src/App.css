@@ -38,17 +38,58 @@ h5,
 #header > .container,
 #about,
 #skills,
-#work, #contact{
+#work,
+#contact {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
+.subtitle {
+  position: relative;
+}
+.subtitle::after {
+  content: '';
+  width: 8rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-4rem);
+  height: 0.1rem;
+  background-color: var(--color-gray-light);
+  border-radius: 1rem;
+}
 nav {
   flex-grow: 1;
   align-self: stretch;
+}
+.nav-link span {
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-black);
+  border-radius: 1rem;
+  transform: scaleX(0);
+  transition: transform ease 0.8s;
+}
+.nav-link span:hover::after {
+  transform: scaleX(1);
+}
+.common-link {
+  text-decoration: none;
+  color: var(--color-black);
+  transition: color linear 0.8s;
+}
+.common-link:hover {
+  color: var(--color-gray-light);
 }
 #hero {
   flex-grow: 50;
@@ -113,11 +154,66 @@ nav {
 .proyect-links li:hover {
   background-color: var(--color-black);
 }
+.proyect-thumb {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.proyect-thumb {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.proyect-thumb::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-black);
+  border-radius: 1rem;
+  transform: scaleX(0);
+  transition: transform ease 1s;
+}
+.proyect-thumb:hover::after {
+  transform: scaleX(1);
+}
 
 /* CONTACT FORM */
 @media (min-width: 800px) {
   form {
     width: 80%;
   }
+}
+/*MODAL*/
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+}
+.center-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0px;
+  line-height: 0.7;
+  cursor: pointer;
+  width: auto;
+  transform: rotate(0deg);
+  transition: all linear 0.3s;
+}
 
+.close-modal:hover {
+  transform: rotate(180deg);
 }

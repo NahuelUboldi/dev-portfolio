@@ -3,17 +3,30 @@ import { BsGithub, BsFilterCircleFill, BsYoutube } from 'react-icons/bs';
 import ProyectLink from './micro/ProyectLink';
 
 const Proyect = (props) => {
-  const { id, title, img, text, links, tags } = props.data;
-  console.log("link",links.youtube);
+  const { id, title, type, img, text, links, tags } = props.data;
   return (
     <div className='proyect mb-5'>
-      <img src={img} alt={title} className='proyect-img mt-5' />
+      <img src={img} alt={title} className='proyect-img mt-3' />
       <ul className='proyect-links'>
-        {links.github && <ProyectLink link={links.github} icon={<BsGithub />} text="Code Repo" />}
-        {links.live && <ProyectLink link={links.live} icon={<BsFilterCircleFill />} text="Live Site" />}
-        {links.youtube && <ProyectLink link={links.youtube} icon={<BsYoutube />} text="Video" />}
+        {links.github && (
+          <ProyectLink
+            link={links.github}
+            icon={<BsGithub />}
+            text='Code Repo'
+          />
+        )}
+        {links.live && (
+          <ProyectLink
+            link={links.live}
+            icon={<BsFilterCircleFill />}
+            text='Live Site'
+          />
+        )}
+        {links.youtube && (
+          <ProyectLink link={links.youtube} icon={<BsYoutube />} text='Video' />
+        )}
       </ul>
-      <div className='h2 fw-bold font-sans'>{title}</div>
+      <div className='h2 fw-bold font-sans'>{`${title} // ${type}`}</div>
       <div className='proyect-text'>
         {text.map((paragraph) => {
           return <p>{paragraph}</p>;

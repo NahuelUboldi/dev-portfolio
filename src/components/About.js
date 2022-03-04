@@ -5,7 +5,7 @@ function About() {
     <section id='about'>
       <div className='container d-flex flex-column align-items-center'>
         <span className='display-3'>About</span>
-                <span className='h3 font-serif mb-5'>
+        <span className='subtitle h3 font-serif mb-5'>
           A brief introduction.
         </span>
         <p className='text-center'>
