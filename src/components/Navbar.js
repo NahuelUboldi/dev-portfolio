@@ -36,11 +36,7 @@ function Navbar() {
                 <span>Work</span>
               </a>
             </li>
-            <li className='nav-item'>
-              <a className='nav-link' href='#work'>
-                <span>Resume</span>
-              </a>
-            </li>
+
             <li className='nav-item'>
               <a className='nav-link' href='#contact'>
                 <span>Contact</span>
