@@ -3,11 +3,11 @@ import Logo from './Logo';
 
 const SkillsMap = (props) => {
   const { skillType, title } = props;
-  console.log(skillType, title);
+
   return (
     <>
       <div className='h4 text-black-50'>{title}</div>
-      <div className='d-flex flex-row justify-content-center'>
+      <div className='d-flex flex-row flex-wrap justify-content-center'>
         {skillType.map((item) => (
           <Logo key={item.title} img={item.logoImg} text={item.text} />
         ))}

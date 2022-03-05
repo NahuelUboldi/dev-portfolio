@@ -3,7 +3,7 @@ import { BsGithub, BsFilterCircleFill, BsYoutube } from 'react-icons/bs';
 import ProyectLink from './micro/ProyectLink';
 
 const Proyect = (props) => {
-  const { id, title, type, img, text, links, tags } = props.data;
+  const { title, type, img, text, links, tags } = props.data;
   return (
     <div className='proyect mb-5'>
       <img src={img} alt={title} className='proyect-img mt-3' />

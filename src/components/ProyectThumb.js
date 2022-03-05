@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProyectThumb = (props) => {
-  const { id, img, title, type, handleModal } = props;
+  const { id, title, type, handleModal } = props;
   return (
     <div>
       <div

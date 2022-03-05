@@ -1,5 +1,4 @@
 import React from 'react';
-import Proyect from './Proyect';
 import ProyectThumb from './ProyectThumb';
 import proyects from '../data/proyectsData';
 import SectionTitles from './micro/SectionTitles';

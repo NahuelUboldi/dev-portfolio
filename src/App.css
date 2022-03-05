@@ -13,7 +13,8 @@
   --color-white: #fff;
   --color-gray: #555;
   --color-gray-dark: #333;
-  --color-gray-light: #ddd;
+  --color-gray-light: #888;
+  --color-gray-lighter: #ddd;
 }
 body {
   font-family: var(--font-serif);
@@ -57,7 +58,7 @@ h5,
   left: 50%;
   transform: translateX(-4rem);
   height: 0.1rem;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-gray-lighter);
   border-radius: 1rem;
 }
 nav {
@@ -85,7 +86,7 @@ nav {
 }
 .common-link {
   text-decoration: none;
-  color: var(--color-gray);
+  color: var(--color-gray-light);
   vertical-align: top;
   transition: color linear 0.8s;
 }
@@ -98,6 +99,21 @@ nav {
 }
 .icons {
   font-size: 1.5rem;
+}
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--color-white);
+  color: var(--color-gray-dark);
+  transition: all ease 0.8s;
 }
 
 /* //PROYECTS */
@@ -122,6 +138,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .proyect-tags li {
   color: var(--color-white);
@@ -214,6 +231,7 @@ nav {
   width: auto;
   transform: rotate(0deg);
   transition: all linear 0.3s;
+  z-index: 99;
 }
 
 .close-modal:hover {

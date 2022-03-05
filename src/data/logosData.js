@@ -2,7 +2,7 @@
 // postman,node,express,mern,mongodb, redux, typescript
 const logos = [
   {
-    order: 1,
+    id: 1,
     title: 'html5',
     text: 'Html 5',
     logoImg: '../img/svg/html5.svg',
@@ -12,7 +12,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 2,
+    id: 2,
     title: 'css3',
     text: 'Css 3',
     logoImg: '../img/svg/css3.svg',
@@ -22,7 +22,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 3,
+    id: 3,
     title: 'js',
     text: 'Javascript',
     logoImg: '../img/svg/js.svg',
@@ -33,7 +33,7 @@ const logos = [
   },
 
   {
-    order: 4,
+    id: 4,
     title: 'react',
     text: 'React',
     logoImg: '../img/svg/react.svg',
@@ -43,7 +43,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 5,
+    id: 5,
     title: 'sass',
     text: 'Sass',
     logoImg: '../img/svg/sass.svg',
@@ -53,7 +53,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 6,
+    id: 6,
     title: 'bootstrap',
     text: 'Bootstrap',
     logoImg: '../img/svg/bootstrap.svg',
@@ -63,7 +63,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 7,
+    id: 7,
     title: 'git',
     text: 'Git',
     logoImg: '../img/svg/git.svg',
@@ -73,7 +73,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 8,
+    id: 8,
     title: 'gsap',
     text: 'Gsap',
     logoImg: '../img/svg/gsap.svg',
@@ -83,7 +83,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 9,
+    id: 9,
     title: 'd3',
     text: 'D3',
     logoImg: '../img/svg/d3.svg',
@@ -93,7 +93,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 10,
+    id: 10,
     title: 'npm',
     text: 'Npm',
     logoImg: '../img/svg/npm.svg',
@@ -103,7 +103,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 11,
+    id: 11,
     title: 'figma',
     text: 'Figma',
     logoImg: '../img/svg/figma.svg',
@@ -113,7 +113,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 12,
+    id: 12,
     title: 'php',
     text: 'Php',
     logoImg: '../img/svg/php.svg',
@@ -123,7 +123,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 13,
+    id: 13,
     title: 'mysql',
     text: 'Mysql',
     logoImg: '../img/svg/mysql.svg',
@@ -133,7 +133,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 14,
+    id: 14,
     title: 'seo',
     text: 'Seo',
     logoImg: '../img/svg/seo.svg',
@@ -143,7 +143,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    order: 15,
+    id: 15,
     title: 'redux',
     text: 'Redux',
     logoImg: '../img/svg/redux.svg',
@@ -153,7 +153,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 16,
+    id: 16,
     title: 'typescript',
     text: 'Typescript',
     logoImg: '../img/svg/typescript.svg',
@@ -163,7 +163,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 17,
+    id: 17,
     title: 'node',
     text: 'Node',
     logoImg: '../img/svg/node.svg',
@@ -173,7 +173,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 18,
+    id: 18,
     title: 'express',
     text: 'Express',
     logoImg: '../img/svg/express.svg',
@@ -183,7 +183,7 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 19,
+    id: 19,
     title: 'mongodb',
     text: 'Mongodb',
     logoImg: '../img/svg/mongodb.svg',
@@ -193,13 +193,23 @@ const logos = [
     doKnowIt: false,
   },
   {
-    order: 20,
+    id: 20,
     title: 'framer-motion',
     text: 'Framer Motion',
     logoImg: '../img/svg/framer-motion.svg',
     type: 'library',
     rol: 'front end',
     use: 'animation',
+    doKnowIt: true,
+  },
+  {
+    id: 20,
+    title: 'styled-components',
+    text: 'Styled Components',
+    logoImg: '../img/svg/styled-components.svg',
+    type: 'library',
+    rol: 'front end',
+    use: 'libraries and frameworks',
     doKnowIt: true,
   },
 ];

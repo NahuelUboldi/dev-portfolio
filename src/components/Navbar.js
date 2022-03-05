@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-transparent'>
       <div className='container-fluid'>
-        <a className='navbar-brand fw-bolder' href='#'>
+        <a className='navbar-brand fw-bolder' href='#header'>
           {'<NahuelUboldi />'}
         </a>
         <button
@@ -37,7 +37,7 @@ function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
+              <a className='nav-link' href='#work'>
                 <span>Resume</span>
               </a>
             </li>
@@ -47,17 +47,22 @@ function Navbar() {
               </a>
             </li>
           </ul>
-           <a className='common-link mx-1'
-        href="https://github.com/NahuelUboldi"       
-        target={'_blank'}
-        rel='nofollow noreferrer noopener'> 
-         <BsGithub /> 
-        </a>
-        <a className='common-link mx-1' href="https://www.linkedin.com/in/nahuel-uboldi-15845ba6/"
-        target={'_blank'}
-        rel='nofollow noreferrer noopener'> 
-         <BsLinkedin /> 
-        </a>
+          <a
+            className='common-link fs-3 mx-1'
+            href='https://github.com/NahuelUboldi'
+            target={'_blank'}
+            rel='nofollow noreferrer noopener'
+          >
+            <BsGithub />
+          </a>
+          <a
+            className='common-link fs-3 mx-1'
+            href='https://www.linkedin.com/in/nahuel-uboldi-15845ba6/'
+            target={'_blank'}
+            rel='nofollow noreferrer noopener'
+          >
+            <BsLinkedin />
+          </a>
         </div>
       </div>
     </nav>
