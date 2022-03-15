@@ -125,10 +125,14 @@ nav {
   filter: grayscale(100%);
   border: double 0.3rem #777;
   border-radius: 1rem;
-  transition: filter ease 1s;
+  transition: all ease 1s;
 }
 .proyect-img:hover {
   filter: grayscale(0);
+   border: double 0.3rem var(--color-black);
+}
+.proyect-thumbnail {
+  max-width: 20rem;
 }
 .proyect-text {
   font-size: 1.2rem;
@@ -173,17 +177,16 @@ nav {
 .proyect-links li:hover {
   background-color: var(--color-black);
 }
+
 .proyect-thumb {
   cursor: pointer;
-  display: inline-block;
+
+}
+.proyect-thumb p.h3 {
+
   position: relative;
 }
-.proyect-thumb {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-}
-.proyect-thumb::after {
+.proyect-thumb p.h3::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -195,7 +198,7 @@ nav {
   transform: scaleX(0);
   transition: transform ease 1s;
 }
-.proyect-thumb:hover::after {
+.proyect-thumb:hover p.h3::after {
   transform: scaleX(1);
 }
 

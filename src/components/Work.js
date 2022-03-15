@@ -13,7 +13,7 @@ const Work = ({ handleModal }) => {
         />
 
         <div className='row'>
-          <div className='col-12 text-center'>
+          <div className='col-12 d-flex justify-content-center flex-wrap'>
             {proyects.map((proy) => {
               const { id, img, title, type } = proy;
               return (

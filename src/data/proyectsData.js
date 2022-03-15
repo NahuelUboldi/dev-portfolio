@@ -26,12 +26,12 @@ const proyects = [
       'The web is built in Html and Javascript. It utilizes the Bootstrap CSS framework with some customizations made with Sass for the styling. It also has some scroll-triggered animations made with the Gsap library.',
     ],
     links: {
-      github: '',
+      github: 'https://github.com/NahuelUboldi/obraje-colaborar',
       live: 'https://www.elobraje.edu.ar/colaborar/',
       youtube: '',
     },
     tags: ['Html', 'Sass', 'Javascript', 'Bootstrap', 'Gsap'],
-  },
+  }
 ];
 
 export default proyects;

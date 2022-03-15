@@ -8,7 +8,7 @@ function About() {
       <div className='container d-flex flex-column align-items-center'>
         <SectionTitles title={'About'} subtitle={'A brief introduction.'} />
         <p className='text-center'>
-          My name is Nahuel Uboldi and I`m a front-end web developer and UI
+          My name is Nahuel Uboldi and I'm a front-end web developer and UI
           designer.
         </p>
         <p className='text-center'>
