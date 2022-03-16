@@ -7,7 +7,6 @@ const Contact = () => {
     <section id='contact'>
       <div className='container d-flex flex-column align-items-center'>
         <SectionTitles title={'Contact'} subtitle={'Get in touch with me.'} />
-
         <ContactForm />
       </div>
     </section>
