@@ -6,7 +6,7 @@ const Proyect = (props) => {
   const { title, type, img, text, links, tags } = props.data;
   return (
     <div className='proyect mb-5'>
-      <img src={img} alt={title} className='proyect-img mt-3' />
+      <img src={img.allDevices} alt={title} className='proyect-img mt-3' />
       <ul className='proyect-links'>
         {links.github && (
           <ProyectLink

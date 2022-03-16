@@ -120,16 +120,14 @@ nav {
 /* //PROYECTS */
 .proyect-img {
   width: 100%;
-  max-width: 25rem;
+  max-width: 45rem;
   padding: 1rem;
   filter: grayscale(100%);
-  border: double 0.3rem #777;
   border-radius: 1rem;
   transition: all ease 1s;
 }
 .proyect-img:hover {
   filter: grayscale(0);
-   border: double 0.3rem var(--color-black);
 }
 .proyect-thumbnail {
   max-width: 20rem;
@@ -183,7 +181,6 @@ nav {
 
 }
 .proyect-thumb p.h3 {
-
   position: relative;
 }
 .proyect-thumb p.h3::after {
@@ -193,7 +190,7 @@ nav {
   left: 0;
   width: 100%;
   height: 0.1rem;
-  background-color: var(--color-black);
+  background-color: var(--color-gray-dark);
   border-radius: 1rem;
   transform: scaleX(0);
   transition: transform ease 1s;
@@ -216,6 +213,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: var(--color-white);
+  z-index: 99;
   overflow: scroll;
 }
 .center-content {

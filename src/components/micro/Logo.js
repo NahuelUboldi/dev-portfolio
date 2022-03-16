@@ -3,7 +3,7 @@ import './logo-styles.css';
 
 function Logo({ img, text }) {
   return (
-    <div class='logo'>
+    <div className='logo'>
       <img src={img} alt='' />
       <span>{text}</span>
     </div>

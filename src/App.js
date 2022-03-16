@@ -65,7 +65,7 @@ function App() {
         {showButton && (
           <motion.button
             onClick={scrollToTop}
-            className='btn btn-dark back-to-top fs-3 p-1 '
+            className='btn btn-dark back-to-top fs-1 p-1'
             initial={{ opacity: 0, x: 100, rotate: 360 }}
             animate={{ opacity: 1, x: 0, rotate: 0 }}
             exit={{ opacity: 0, x: 200, rotate: 360 }}
