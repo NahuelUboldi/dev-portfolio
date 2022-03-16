@@ -7,7 +7,6 @@
 ### Table of Contents
 
 - [Description](#description)
-- [References](#references)
 - [Author Info](#author-info)
 
 ---
