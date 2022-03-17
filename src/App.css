@@ -18,7 +18,8 @@
 }
 body {
   font-family: var(--font-serif);
-  /* background-image: url('./img/bg/03.png'); */
+  background-image: url('./img/bg/bg-grunge.jpg');
+  background-size:cover;
 }
 h1,
 h2,
@@ -100,6 +101,14 @@ nav {
 }
 .icons {
   font-size: 1.5rem;
+}
+.title-text {
+    background-image: url('./img/bg/black.jpg');
+
+   -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip:text;
+ background-clip:text; 
 }
 /* BACK TO TOP BUTTON */
 .back-to-top {
