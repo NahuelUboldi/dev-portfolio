@@ -9,7 +9,7 @@ const Work = ({ handleModal }) => {
       <div className='container d-flex flex-column align-items-center'>
         <SectionTitles
           title={'Work'}
-          subtitle={'Some of my featured proyects.'}
+          subtitle={'Some of my featured projects.'}
         />
 
         <div className='row'>
