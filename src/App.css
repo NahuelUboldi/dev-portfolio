@@ -201,6 +201,8 @@ nav {
   background-color: var(--color-gray-dark);
   border-radius: 1rem;
   transform: scaleX(0);
+
+  transform-origin: 0% 50%;
   transition: transform ease 1s;
 }
 .proyect-thumb:hover p.h3::after {
@@ -213,6 +215,42 @@ nav {
     width: 80%;
   }
 }
+.mailme {
+  cursor: pointer;
+position: relative;
+}
+.mailme::before {
+  content:"copy to clipboard";
+  position:absolute;
+  width: 100%;
+  top:-2rem;
+  left:0;
+  background-color: #eee;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+.mailme:hover::before {
+  visibility: visible;
+}
+.mailme::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-gray-dark);
+  border-radius: 1rem;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform ease 1s;
+}
+.mailme:hover::after {
+  transform: scaleX(1);
+}
+
+
 /*MODAL*/
 .modal-bg {
   position: fixed;

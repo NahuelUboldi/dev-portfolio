@@ -6,7 +6,7 @@ const SkillsMap = (props) => {
 
   return (
     <>
-      <div className='h4 text-black-50'>{title}</div>
+      <div className='fs-5 text-black-50 font-sans'>{title}</div>
       <div className='d-flex flex-row flex-wrap justify-content-center'>
         {skillType.map((item) => (
           <Logo key={item.title} img={item.logoImg} text={item.text} />

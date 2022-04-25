@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './micro/ContactForm';
+import Email from './micro/Email';
 import SectionTitles from './micro/SectionTitles';
 
 const Contact = () => {
@@ -7,6 +8,7 @@ const Contact = () => {
     <section id='contact'>
       <div className='container d-flex flex-column align-items-center'>
         <SectionTitles title={'Contact'} subtitle={'Get in touch with me.'} />
+        <p className="font-sans text-center">Mail me to <Email /> or write me a message down below.</p>
         <ContactForm />
       </div>
     </section>

@@ -6,7 +6,7 @@ import SectionTitles from './micro/SectionTitles';
 function About() {
   return (
     <section id='about'>
-      <div className='container d-flex flex-column align-items-center fs-5'>
+      <div className='container d-flex flex-column align-items-center fs-6 font-sans'>
         <SectionTitles title={'About'} subtitle={'A brief introduction.'} />
         <p className='text-center'>
           My name is Nahuel Uboldi and I'm a front-end web developer and UI
