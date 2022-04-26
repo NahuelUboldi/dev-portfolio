@@ -33,8 +33,8 @@ const Proyect = (props) => {
           />
         )}
       </ul>
-      <div className='h1 fw-bold font-sans'>{`${title} // ${type}`}</div>
-      <div className='proyect-text'>
+      <div className='h1 mb-5 fw-bold'>{`${title} // ${type}`}</div>
+      <div className='proyect-text font-sans'>
         {text.map((paragraph, index) => {
           return <p key={`p${index}`}>{paragraph}</p>;
         })}
