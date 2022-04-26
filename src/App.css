@@ -14,7 +14,7 @@
   --color-gray: #555;
   --color-gray-dark: #333;
   --color-gray-light: #888;
-  --color-gray-lighter: #ddd;
+  --color-gray-lighter: #eee;
 }
 body {
   font-family: var(--font-serif);
@@ -63,9 +63,13 @@ h5,
   background-color: var(--color-gray-lighter);
   border-radius: 1rem;
 }
+
 nav {
   flex-grow: 1;
   align-self: stretch;
+}
+.nav-link {
+  color:var(--color-black)
 }
 .nav-link span {
   position: relative;
@@ -81,6 +85,8 @@ nav {
   background-color: var(--color-black);
   border-radius: 1rem;
   transform: scaleX(0);
+  
+  transform-origin: 0% 50%;
   transition: transform ease 0.8s;
 }
 .nav-link span:hover::after {
@@ -88,13 +94,60 @@ nav {
 }
 .common-link {
   text-decoration: none;
-  color: var(--color-gray-light);
+  color: var(--color-gray-dark);
   vertical-align: top;
-  transition: color linear 0.8s;
+  transition: all linear 0.5s;
 }
 .common-link:hover {
   color: var(--color-black);
+  transform: scale(1.1);
 }
+/* call to action links*/
+.call-to-action-link,.call-to-action-link__secondary {
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  vertical-align: top;
+  transition: color linear 0.5s;
+  position: relative;
+  color: var(--color-black);
+}
+.call-to-action-link__secondary {
+  color: var(--color-gray-dark)
+}
+.call-to-action-mask {
+  overflow: hidden;
+}
+
+.call-to-action-link::before,.call-to-action-link__secondary::before {
+  content:"";
+  width: 220%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transform: translateX(-55%);
+  z-index: -1;
+  transition: all linear 0.5s;
+}
+.call-to-action-link::before {
+  background: var(--color-black) ;
+  background: linear-gradient(62deg, var(--color-black) 50%, var(--color-gray-lighter) 50%); 
+  
+}
+.call-to-action-link__secondary::before {
+ background: rgb(0,0,0);
+  background: linear-gradient(62deg, var(--color-gray-lighter) 50%, var(--color-white) 50%); 
+}
+.call-to-action-link:hover {
+  color: var(--color-white);
+  }
+  .call-to-action-link__secondary:hover {
+  color: var(--color-black);
+  }
+.call-to-action-link:hover::before,.call-to-action-link__secondary:hover::before {
+  transform: translateX(0%);
+  }
+
 #hero {
   flex-grow: 50;
   align-self: stretch;

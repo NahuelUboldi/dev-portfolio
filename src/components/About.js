@@ -1,5 +1,6 @@
 import React from 'react';
-import resume from '../files/cv-nahuel-uboldi.pdf';
+import resume from '../files/cv-nahuel-uboldi-2022.pdf';
+import CallToActionBtn from './micro/CallToActionBtn';
 
 import SectionTitles from './micro/SectionTitles';
 
@@ -24,16 +25,8 @@ function About() {
           and, of course, coding the site.
         </p>
         <p>Wanna know more about me?</p>
-        <p>
-          <a
-            href={resume}
-            className='common-link'
-            target={'_blank'}
-            rel='nofollow noreferrer noopener'
-          >
-            {'>> Check out my resume <<'}
-          </a>
-        </p>
+        <CallToActionBtn text="Check out my Resume" href={resume} targetBlank={true} secondary={false} />
+      
       </div>
     </section>
   );

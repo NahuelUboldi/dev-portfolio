@@ -20,7 +20,7 @@ function Navbar() {
           <span className='navbar-toggler-icon'></span>
         </button>
         <div className='collapse navbar-collapse' id='navbarNav'>
-          <ul className='navbar-nav ms-auto'>
+          <ul className='navbar-nav m-auto'>
             <li className='nav-item'>
               <a className='nav-link' aria-current='page' href='#about'>
                 <span>About</span>
@@ -44,7 +44,7 @@ function Navbar() {
             </li>
           </ul>
           <a
-            className='common-link fs-3 mx-1'
+            className='common-link fs-4 mx-2'
             href='https://github.com/NahuelUboldi'
             target={'_blank'}
             rel='nofollow noreferrer noopener'
@@ -52,7 +52,7 @@ function Navbar() {
             <BsGithub />
           </a>
           <a
-            className='common-link fs-3 mx-1'
+            className='common-link fs-4 mx-2'
             href='https://www.linkedin.com/in/nahuel-uboldi-15845ba6/'
             target={'_blank'}
             rel='nofollow noreferrer noopener'

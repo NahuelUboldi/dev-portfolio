@@ -1,5 +1,13 @@
 import React from 'react';
-import { BsChevronCompactDown } from 'react-icons/bs';
+import bananaImg from "../img/bg/banana.png"
+import CallToActionBtn from './micro/CallToActionBtn';
+const style = {
+  maxHeight:"50vh",
+  maxWidth:"100%",
+  marginTop:"-5rem",
+  zIndex:"-1",
+  opacity:1
+}
 
 function Hero() {
   return (
@@ -7,17 +15,17 @@ function Hero() {
       id='hero'
       className='d-flex flex-column align-items-center justify-content-center'
     >
-      <span className='display-3 text-center'>
+      <img src={bananaImg} alt="" style={style} className="" />
+      <span className='display-4 text-center mt-5 mb-2'>
         Unique Front-End Experiences
       </span>
-      <h1 className='h1 font-serif fw-4 mb-5'>Ideas into code</h1>
+      <h1 className='h3 fw-lighter mb-4 font-serif'>Great ideas into code</h1>
 
-      <p className='lead text-center'>
-        Scroll down to see my work <br />
-        <a className='common-link fs-1' href='#work'>
-          <BsChevronCompactDown />
-        </a>
-      </p>
+      <div className="mb-2 d-flex flex-column flex-sm-row">
+        <CallToActionBtn text="See my work" href="#work" targetBlank={false} secondary={false} />
+        <CallToActionBtn text="Contact me" href="#contact" targetBlank={false} secondary={true} />
+      </div>
+
     </section>
   );
 }
