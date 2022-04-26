@@ -8,7 +8,9 @@ const Contact = () => {
     <section id='contact'>
       <div className='container d-flex flex-column align-items-center'>
         <SectionTitles title={'Contact'} subtitle={'Get in touch with me.'} />
-        <p className="font-sans text-center">Mail me to <Email /> or write me a message down below.</p>
+        <p className='font-sans text-center'>
+          Send an email to <Email /> or write me a message down below.
+        </p>
         <ContactForm />
       </div>
     </section>

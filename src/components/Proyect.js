@@ -10,6 +10,7 @@ const Proyect = (props) => {
       <ul className='proyect-links'>
         {links.github && (
           <ProyectLink
+            id='01'
             link={links.github}
             icon={<BsGithub />}
             text='Code Repo'
@@ -17,25 +18,31 @@ const Proyect = (props) => {
         )}
         {links.live && (
           <ProyectLink
+            id='02'
             link={links.live}
             icon={<BsFilterCircleFill />}
             text='Live Site'
           />
         )}
         {links.youtube && (
-          <ProyectLink link={links.youtube} icon={<BsYoutube />} text='Video' />
+          <ProyectLink
+            id='03'
+            link={links.youtube}
+            icon={<BsYoutube />}
+            text='Video'
+          />
         )}
       </ul>
       <div className='h1 fw-bold font-sans'>{`${title} // ${type}`}</div>
       <div className='proyect-text'>
-        {text.map((paragraph) => {
-          return <p>{paragraph}</p>;
+        {text.map((paragraph, index) => {
+          return <p key={`p${index}`}>{paragraph}</p>;
         })}
       </div>
       <span className='fw-bold text-black-50'>Technologies used:</span>
       <ul className='proyect-tags'>
-        {tags.map((tech) => {
-          return <li>{tech}</li>;
+        {tags.map((tech, index) => {
+          return <li key={`li${index}`}>{tech}</li>;
         })}
       </ul>
     </div>

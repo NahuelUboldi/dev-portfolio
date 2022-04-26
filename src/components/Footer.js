@@ -1,16 +1,13 @@
 import React from 'react';
-
+import Email from './micro/Email';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <section id='footer' className='pt-5 pb-3'>
       <div className='container text-center'>
-        Nahuel Uboldi |{' '}
-        <span>
-          <img src='../img/nahuel-uboldi-contact.svg' alt='' />
-        </span>{' '}
-        | {date} |
+        Nahuel Uboldi | {<Email />} | {date} |
         <a
           className='common-link mx-1'
           href='https://github.com/NahuelUboldi'

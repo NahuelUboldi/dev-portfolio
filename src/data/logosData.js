@@ -135,7 +135,7 @@ const logos = [
   {
     id: 14,
     title: 'seo',
-    text: 'Seo',
+    text: 'Search Engine Optimization',
     logoImg: '../img/svg/seo.svg',
     type: 'skill',
     rol: 'full stack',
