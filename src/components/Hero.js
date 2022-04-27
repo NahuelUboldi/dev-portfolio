@@ -1,12 +1,14 @@
 import React from 'react';
 import bananaImg from '../img/bg/banana.png';
+import camelImg from '../img/bg/camel2.png';
+
 import CallToActionBtn from './micro/CallToActionBtn';
 const style = {
   maxHeight: '50vh',
   maxWidth: '100%',
   marginTop: '-5rem',
   zIndex: '-1',
-  opacity: 0.8,
+  opacity: 1,
 };
 
 function Hero() {
@@ -15,7 +17,7 @@ function Hero() {
       id='hero'
       className='d-flex flex-column align-items-center justify-content-center'
     >
-      <img src={bananaImg} alt='' style={style} className='' />
+      <img src={camelImg} alt='' style={style} className='' />
       <h1 className='h3 fw-lighter  font-serif mt-5'>Coding ideas into</h1>
       <span className='display-4 text-center mb-3'>
         Unique Front-End Experiences
