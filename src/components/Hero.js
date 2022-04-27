@@ -1,13 +1,13 @@
 import React from 'react';
-import bananaImg from "../img/bg/banana.png"
+import bananaImg from '../img/bg/banana.png';
 import CallToActionBtn from './micro/CallToActionBtn';
 const style = {
-  maxHeight:"50vh",
-  maxWidth:"100%",
-  marginTop:"-5rem",
-  zIndex:"-1",
-  opacity:1
-}
+  maxHeight: '50vh',
+  maxWidth: '100%',
+  marginTop: '-5rem',
+  zIndex: '-1',
+  opacity: 0.8,
+};
 
 function Hero() {
   return (
@@ -15,17 +15,26 @@ function Hero() {
       id='hero'
       className='d-flex flex-column align-items-center justify-content-center'
     >
-      <img src={bananaImg} alt="" style={style} className="" />
-      <span className='display-4 text-center mt-5 mb-2'>
+      <img src={bananaImg} alt='' style={style} className='' />
+      <h1 className='h3 fw-lighter  font-serif mt-5'>Coding ideas into</h1>
+      <span className='display-4 text-center mb-3'>
         Unique Front-End Experiences
       </span>
-      <h1 className='h3 fw-lighter mb-4 font-serif'>Great ideas into code</h1>
 
-      <div className="mb-2 d-flex flex-column flex-sm-row">
-        <CallToActionBtn text="See my work" href="#work" targetBlank={false} secondary={false} />
-        <CallToActionBtn text="Contact me" href="#contact" targetBlank={false} secondary={true} />
+      <div className='mb-2 d-flex flex-column mt-2 flex-sm-row'>
+        <CallToActionBtn
+          text='See my work'
+          href='#work'
+          targetBlank={false}
+          secondary={false}
+        />
+        <CallToActionBtn
+          text='Contact me'
+          href='#contact'
+          targetBlank={false}
+          secondary={true}
+        />
       </div>
-
     </section>
   );
 }
