@@ -6,7 +6,7 @@ import CallToActionBtn from './micro/CallToActionBtn';
 const style = {
   maxHeight: '50vh',
   maxWidth: '100%',
-  marginTop: '-5rem',
+  marginTop: '0rem',
   zIndex: '-1',
   opacity: 1,
 };

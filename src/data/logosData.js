@@ -203,7 +203,7 @@ const logos = [
     doKnowIt: true,
   },
   {
-    id: 20,
+    id: 21,
     title: 'styled-components',
     text: 'Styled Components',
     logoImg: '../img/svg/styled-components.svg',
@@ -212,6 +212,26 @@ const logos = [
     use: 'libraries and frameworks',
     doKnowIt: true,
   },
+  {
+    id: 22,
+    title: 'barba',
+    text: 'Barba js',
+    logoImg: '../img/svg/barba.svg',
+    type: 'library',
+    rol: 'front end',
+    use: 'animation',
+    doKnowIt: true,
+  },
+  {
+    id: 23,
+    title: 'tailwind',
+    text: 'Tailwind Css',
+    logoImg: '../img/svg/tailwindcss.svg',
+    type: 'framework',
+    rol: 'front end',
+    use: 'libraries and frameworks',
+    doKnowIt: true,
+  }
 ];
 
 export default logos;
