@@ -6,7 +6,6 @@ const keywords = ["software engineer skills", "web developer tools", "front end 
 
 function Logo({ img, text }) {
   const randomNum = () => Math.floor(Math.random() * keywords.length)
-  console.log(randomNum());
   return (
     <div className='logo'>
       <img src={img} alt={keywords[randomNum()]} loading='lazy' />
