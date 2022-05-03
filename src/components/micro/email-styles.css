@@ -1,0 +1,15 @@
+.mailme {
+  display: inline;
+  cursor: pointer;
+  position: relative;
+}
+.copy-alert {
+  display: block;
+  position: absolute;
+  background-color: var(--color-gray-lighter);
+  top:0;
+  left: 0;
+  width: 100%;
+  border-radius: 0.2rem;
+  transition: transform ease 1s;
+}

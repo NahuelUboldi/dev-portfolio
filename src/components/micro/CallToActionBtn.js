@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './callToActionBtn-styles.css';
 function CallToActionBtn({ text, href, targetBlank, secondary }) {
   let callToActionClassName = 'call-to-action-link';
   if (secondary) callToActionClassName = 'call-to-action-link__secondary';

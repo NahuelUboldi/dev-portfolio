@@ -49,6 +49,7 @@ function Navbar() {
             target={'_blank'}
             rel='nofollow noreferrer noopener'
           >
+            <span class="hide-text-link">Github</span>
             <BsGithub />
           </a>
           <a
@@ -57,6 +58,7 @@ function Navbar() {
             target={'_blank'}
             rel='nofollow noreferrer noopener'
           >
+            <span class="hide-text-link">Linkedin</span>
             <BsLinkedin />
           </a>
         </div>

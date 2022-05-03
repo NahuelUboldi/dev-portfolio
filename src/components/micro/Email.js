@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-
+import './email-styles.css';
 
 function Email() {
   const [copyAlert, setCopyAlert] = useState("Click to copy")
@@ -21,7 +21,7 @@ function Email() {
       setCopyAlert("Click to copy")
     }}>
     nahueluboldi@gmail.com
-    {isCopyAlertOpen && <span class="copy-alert">{copyAlert}</span>}
+    {isCopyAlertOpen && <span class="copy-alert font-serif fw-3">{copyAlert}</span>}
     </span>
   )
 }

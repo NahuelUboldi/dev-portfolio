@@ -1,16 +1,16 @@
-const proyects = [
+const projects = [
   {
     id: '01',
     title: 'Detrás del armario',
     type: 'React App',
     img: {
-      screenShot: 'img/proyects/detras-del-armario.png',
-      allDevices: "img/proyects/detras-del-armario/all-devices.png",
-      threeDevices:"img/proyects/detras-del-armario/3-devices.png",
-      desktop:"img/proyects/detras-del-armario/desktop.png",
-      laptop:"img/proyects/detras-del-armario/laptop.png",
-      tablet:"img/proyects/detras-del-armario/tablet.png",
-      mobile:"img/proyects/detras-del-armario/mobile.png"
+      screenShot: 'img/projects/detras-del-armario.png',
+      allDevices: "img/projects/detras-del-armario/all-devices.png",
+      threeDevices:"img/projects/detras-del-armario/3-devices.png",
+      desktop:"img/projects/detras-del-armario/desktop.png",
+      laptop:"img/projects/detras-del-armario/laptop.png",
+      tablet:"img/projects/detras-del-armario/tablet.png",
+      mobile:"img/projects/detras-del-armario/mobile.png"
     },
     text: [
       'This is a React app made in collaboration with the argentinian writer Sofía Contreras Canard.',
@@ -29,13 +29,13 @@ const proyects = [
     title: 'El Obraje Colaborar',
     type: 'Landing Page',
         img: {
-      screenShot: './img/proyects/obraje-colaborar.png',
-      allDevices: "./img/proyects/obraje-colaborar/all-devices.png",
-      threeDevices:"./img/proyects/obraje-colaborar/3-devices.png",
-      desktop:"./img/proyects/obraje-colaborar/desktop.png",
-      laptop:"./img/proyects/obraje-colaborar/laptop.png",
-      tablet:"./img/proyects/obraje-colaborar/tablet.png",
-      mobile:"./img/proyects/obraje-colaborar/mobile.png"
+      screenShot: './img/projects/obraje-colaborar.png',
+      allDevices: "./img/projects/obraje-colaborar/all-devices.png",
+      threeDevices:"./img/projects/obraje-colaborar/3-devices.png",
+      desktop:"./img/projects/obraje-colaborar/desktop.png",
+      laptop:"./img/projects/obraje-colaborar/laptop.png",
+      tablet:"./img/projects/obraje-colaborar/tablet.png",
+      mobile:"./img/projects/obraje-colaborar/mobile.png"
     },
 
     text: [
@@ -51,4 +51,4 @@ const proyects = [
   }
 ];
 
-export default proyects;
+export default projects;

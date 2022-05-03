@@ -1,0 +1,48 @@
+/* call to action links*/
+.call-to-action-link,.call-to-action-link__secondary {
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  line-height: 2.2rem;
+  vertical-align: top;
+  transition: color linear 0.5s;
+  position: relative;
+  color: var(--color-black);
+}
+.call-to-action-link__secondary {
+  color: var(--color-gray-dark)
+}
+.call-to-action-mask {
+  overflow: hidden;
+  border-radius: 0.2rem;
+  /* border: 1px solid var(--color-gray-lighter); */
+}
+
+.call-to-action-link::before,.call-to-action-link__secondary::before {
+  content:"";
+  width: 230%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transform: translateX(-55%);
+  z-index: -1;
+  transition: all linear 0.5s;
+}
+.call-to-action-link::before {
+  background: var(--color-black) ;
+  background: linear-gradient(62deg, var(--color-black) 50%, var(--color-gray-lighter) 50%); 
+  
+}
+.call-to-action-link__secondary::before {
+ background: rgb(0,0,0);
+  background: linear-gradient(62deg, var(--color-gray-lighter) 50%, var(--color-white) 50%); 
+}
+.call-to-action-link:hover {
+  color: var(--color-white);
+  }
+  .call-to-action-link__secondary:hover {
+  color: var(--color-black);
+  }
+.call-to-action-link:hover::before,.call-to-action-link__secondary:hover::before {
+  transform: translateX(0%);
+  }

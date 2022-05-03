@@ -1,15 +1,15 @@
 import React from 'react';
 import { BsGithub, BsFilterCircleFill, BsYoutube } from 'react-icons/bs';
-import ProyectLink from './micro/ProyectLink';
+import ProjectLink from './micro/ProjectLink';
 
-const Proyect = (props) => {
+const Project = (props) => {
   const { title, type, img, text, links, tags } = props.data;
   return (
-    <div className='proyect mb-5'>
-      <img src={img.allDevices} alt={title} className='proyect-img mt-3' />
-      <ul className='proyect-links'>
+    <div className='project mb-5'>
+      <img src={img.allDevices} alt={title} className='project-img mt-3' />
+      <ul className='project-links'>
         {links.github && (
-          <ProyectLink
+          <ProjectLink
             id='01'
             link={links.github}
             icon={<BsGithub />}
@@ -17,7 +17,7 @@ const Proyect = (props) => {
           />
         )}
         {links.live && (
-          <ProyectLink
+          <ProjectLink
             id='02'
             link={links.live}
             icon={<BsFilterCircleFill />}
@@ -25,7 +25,7 @@ const Proyect = (props) => {
           />
         )}
         {links.youtube && (
-          <ProyectLink
+          <ProjectLink
             id='03'
             link={links.youtube}
             icon={<BsYoutube />}
@@ -34,13 +34,13 @@ const Proyect = (props) => {
         )}
       </ul>
       <div className='h1 mb-5 fw-bold'>{`${title} // ${type}`}</div>
-      <div className='proyect-text font-sans'>
+      <div className='project-text font-sans'>
         {text.map((paragraph, index) => {
           return <p key={`p${index}`}>{paragraph}</p>;
         })}
       </div>
       <span className='fw-bold text-black-50'>Technologies used:</span>
-      <ul className='proyect-tags'>
+      <ul className='project-tags'>
         {tags.map((tech, index) => {
           return <li key={`li${index}`}>{tech}</li>;
         })}
@@ -49,4 +49,4 @@ const Proyect = (props) => {
   );
 };
 
-export default Proyect;
+export default Project;

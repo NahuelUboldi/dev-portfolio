@@ -1,6 +1,6 @@
 import React from 'react';
-import ProyectThumb from './ProyectThumb';
-import proyects from '../data/proyectsData';
+import ProjectThumb from './ProjectThumb';
+import projects from '../data/projectsData';
 import SectionTitles from './micro/SectionTitles';
 
 const Work = ({ handleModal }) => {
@@ -14,10 +14,10 @@ const Work = ({ handleModal }) => {
 
         <div className='row'>
           <div className='col-12 d-flex justify-content-center flex-wrap'>
-            {proyects.map((proy) => {
+            {projects.map((proy) => {
               const { id, img, title, type } = proy;
               return (
-                <ProyectThumb
+                <ProjectThumb
                   key={id}
                   id={id}
                   img={img}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProyectLinks = (props) => {
+const ProjectLinks = (props) => {
   const { id, link, icon, text } = props;
   return (
     <li>
@@ -17,4 +17,4 @@ const ProyectLinks = (props) => {
   );
 };
 
-export default ProyectLinks;
+export default ProjectLinks;
