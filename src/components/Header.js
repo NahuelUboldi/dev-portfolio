@@ -4,12 +4,12 @@ import Navbar from './Navbar'
 
 function Header() {
  return (
-  <section id="header">
+  <header id="header">
    <div className="container">
     <Navbar />
     <Hero />
    </div>   
-  </section>
+  </header>
  )
 }
 

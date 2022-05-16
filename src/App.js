@@ -63,9 +63,11 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         
         <Header />
-        <About />
-        <Skills />
-        <Work handleModal={handleModal} />
+        <main>
+          <About />
+          <Skills />
+          <Work handleModal={handleModal} />
+        </main>
         <Contact />
         <Footer />
         <AnimatePresence>

@@ -4,7 +4,7 @@ const logos = [
   {
     id: 1,
     title: 'html5',
-    text: 'Html 5',
+    text: 'Html',
     logoImg: '../img/svg/html5.svg',
     type: 'language',
     rol: 'front end',
@@ -14,7 +14,7 @@ const logos = [
   {
     id: 2,
     title: 'css3',
-    text: 'Css 3',
+    text: 'Css',
     logoImg: '../img/svg/css3.svg',
     type: 'language',
     rol: 'front end',

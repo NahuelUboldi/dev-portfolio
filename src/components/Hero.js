@@ -17,7 +17,7 @@ function Hero() {
       id='hero'
       className='d-flex flex-column align-items-center justify-content-center'
     >
-      <img loading="lazy" src={camelImg} alt='Front-end developer' style={style} className='' />
+      <img src={camelImg} alt='Front-end developer' style={style} className='' />
       <h1 className='h3 fw-lighter  font-serif mt-5'>Coding ideas into</h1>
       <span className='display-4 text-center mb-3'>
         Unique Front-End Experiences

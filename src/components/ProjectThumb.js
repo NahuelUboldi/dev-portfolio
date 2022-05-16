@@ -14,7 +14,7 @@ const ProjectThumb = (props) => {
           alt={title}
           className='project-img project-thumbnail mt-3 mb-3'
         />
-        <p className='h3 font-sans fw-bold mb-0'>{title}</p>
+        <h3 className='h3 font-sans fw-bold mb-0'>{title}</h3>
         <p className='lead'>{type}</p>
       </div>
     </div>
