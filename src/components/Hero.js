@@ -1,17 +1,19 @@
 // import bananaImg from '../img/bg/banana.png';
 
 // import camelImg from '../img/bg/camel2.png';
-import HeroImg3D from './HeroImg3D';
+import prueba2 from '../img/bg/prueba2.png';
 
+import DepthMapImg from './DepthMapImg';
 import CallToActionBtn from './micro/CallToActionBtn';
 
-// const style = {
-//   maxHeight: '50vh',
-//   maxWidth: '100%',
-//   marginTop: '0rem',
-//   zIndex: '-1',
-//   opacity: 1,
-// };
+const style = {
+  maxHeight: '60vh',
+  maxWidth: '100%',
+  marginTop: '0rem',
+  zIndex: '-1',
+  opacity: 1,
+  // outline: 'solid 1px red',
+};
 
 function Hero() {
   // });
@@ -20,13 +22,16 @@ function Hero() {
       id='hero'
       className='d-flex flex-column align-items-center justify-content-center'
     >
-      {/* <img
-        src={camelImg}
-        alt='Front-end developer'
-        style={style}
-        className=''
-      /> */}
-      <HeroImg3D />
+      <img src={prueba2} alt='Front-end developer' style={style} className='' />
+      {/* <div
+        style={{
+          // outline: 'solid 1px red',
+          width: '100%',
+          height: '100%',
+        }}
+      >
+        <DepthMapImg />
+      </div> */}
       <h1 className='h3 fw-lighter  font-serif mt-5'>Coding ideas into</h1>
       <span className='display-4 text-center mb-3'>
         Unique Front-End Experiences
